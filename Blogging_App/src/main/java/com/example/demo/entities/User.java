@@ -15,12 +15,10 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 @Entity
 @Table(name="users")
-
-
 public class User {
 
 	@Id
-//	@GeneratedValue(strategy = GenerationType.AUTO) //Generating two tables users and users_seq
+	//@GeneratedValue(strategy = GenerationType.AUTO) //Generating two tables users and users_seq
 	//AUTO strategy uses the database sequence to generate the unique value for your id column
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int uid;

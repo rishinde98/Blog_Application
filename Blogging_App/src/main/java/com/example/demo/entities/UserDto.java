@@ -21,7 +21,7 @@ public class UserDto {
 	
 	@NotEmpty
 	@Size(min=3,max=12, message="password must be 3-12 characters")
-	@Pattern(regexp = "^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[@#$%^&+=!])(?=\\S+$/).{8,}$") //?= positive lookahead assertion 
+//	@Pattern(regexp = "^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[@#$%^&+=!])(?=\\S+$/).{8,}$") //?= positive lookahead assertion 
 	private String pwd;
 	
 	

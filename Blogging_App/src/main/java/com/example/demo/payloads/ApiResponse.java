@@ -3,7 +3,7 @@ package com.example.demo.payloads;
 public class ApiResponse {
 
 	private String message;
-	private boolean sucess;
+	private boolean success;
 	
 	public String getMessage() {
 		return message;
@@ -12,15 +12,15 @@ public class ApiResponse {
 		this.message = message;
 	}
 	public boolean isSucess() {
-		return sucess;
+		return success;
 	}
 	public void setSucess(boolean sucess) {
-		this.sucess = sucess;
+		this.success = sucess;
 	}
 	public ApiResponse(String message, boolean sucess) {
 		super();
 		this.message = message;
-		this.sucess = sucess;
+		this.success = sucess;
 	}
 	public ApiResponse() {
 		super();
